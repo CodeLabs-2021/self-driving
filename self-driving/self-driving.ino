@@ -17,7 +17,7 @@
   GP2Y0A710K0F --> 100500
   GP2YA41SK0F --> 430
 */
-
+ 
 // Create a new instance of the SharpIR class:
 SharpIR sensor = SharpIR(IRPin, model);
 
@@ -60,7 +60,7 @@ void turn_left(int ms) {
 }
 
 void turn_right(int ms) {
-  left_servo.write(0);
+  left_servo.write(180);
   stop_right_wheel();
   delay(ms);
 }
@@ -104,12 +104,52 @@ int get_direction() {
   right_dis = get_distance();
   if (left_dis >= 20 && right_dis >= 20) {
     return -1;
-  } else if (left_dis < 20 && right_dis < 20) {
+  } else if (left_dis < 20 && right_dis < 20) {  
     return 0;
   } else if (left_dis > right_dis) {
     return -1;
   } else {
     return 1;
+  }
+}
+
+void turn_around() {
+  sensor_servo.write(90);
+  delay(700);
+  backward();
+  delay(1000);
+  stop_move();
+  
+  int left_dis, right_dis;
+  
+  sensor_servo.write(0);
+  delay(750);
+  left_dis = get_distance();
+  
+  sensor_servo.write(180);
+  delay(750);
+  right_dis = get_distance();
+  while (left_dis < 20 and right_dis < 20) {
+    sensor_servo.write(90); 
+    delay(700);
+    
+    backward();
+    delay(1000);
+    stop_move();
+    
+    sensor_servo.write(0);
+    delay(750);
+    left_dis = get_distance();
+    
+    sensor_servo.write(180);
+    delay(750);
+    right_dis = get_distance();
+  }
+
+  if (right_dis >= 20) {
+    turn_right(750);
+  } else {
+    turn_left(750);
   }
 }
 
@@ -122,19 +162,18 @@ void loop(){
   while (get_distance() > 15) {
     forward();
   }
-  left_servo.write(90);
-  right_servo.write(90);
+  stop_move();
   int turn_dir = get_direction();
   switch (turn_dir) {
     case -1:
       turn_left(750);
       break;
     case 0:
-      // turn around    
-      turn_left(2000);
+      turn_around();   
       break;
     case 1:
       turn_right(750);
       break;
   }
 }
+
