@@ -25,7 +25,7 @@ void limitLight(int sensor_dist, int LED_pin)
 }
 
 
-SharpIR mySensor = SharpIR(IRPin, model);
+SharpIR sensor0 = SharpIR( SharpIR::GP2Y0A21YK0F, A0 );
 
 void setup() {
   Serial.begin(9600);

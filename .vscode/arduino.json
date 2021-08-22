@@ -1,6 +1,6 @@
 {
     "board": "arduino:avr:uno",
     "programmer": "arduino:avrispmkii",
-    "port": "/dev/tty.usbmodem14101",
-    "sketch": "simple_sensor2/simple_sensor2.ino"
+    "port": "/dev/cu.usbmodem14101",
+    "sketch": "sound_detect/sound_detect.ino"
 }
