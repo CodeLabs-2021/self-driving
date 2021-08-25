@@ -1,6 +1,6 @@
 #include <arduinoFFT.h>
 // uncomment when doing classification
-#include "model.h"
+// #include "model.h"
 #define MIC A0
 #define NUM_SAMPLES 64
 #define SAMPLING_FREQUENCY 1024
@@ -41,9 +41,8 @@ void loop() {
     printFeatures();
 
 // uncomment when doing classification
-   Serial.print("You said ");
-//    // Serial.println(classIdxToName(predict(features)));
-   Serial.println(oak.idxToLabel(oak.predict(features)));
+//    Serial.print("You said ");
+//    Serial.println(oak.idxToLabel(oak.predict(features)));
 
 
     delay(1000);
