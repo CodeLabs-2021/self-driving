@@ -25,9 +25,9 @@ const int check_dist = 10;
 Servo servoRight;
 Servo servoLeft;
 
-SharpIR sensor0 = SharpIR( SharpIR::GP2Y0A21YK0F, A0 );
-SharpIR sensor1 = SharpIR( SharpIR::GP2Y0A21YK0F, A1 );
-SharpIR sensor2 = SharpIR( SharpIR::GP2Y0A21YK0F, A2 );
+SharpIR sensor0 = SharpIR( SharpIR::GP2Y0A21YK0F, A3 );
+SharpIR sensor1 = SharpIR( SharpIR::GP2Y0A21YK0F, A4 );
+SharpIR sensor2 = SharpIR( SharpIR::GP2Y0A21YK0F, A5 );
 
 // SharpIR sensor0 = SharpIR(sensorPin0, model);
 // SharpIR sensor1 = SharpIR(sensorPin1, model);

@@ -1,16 +1,19 @@
 #include <arduinoFFT.h>
+
 // uncomment when doing classification
-#include "model.h"
+// #include "model.h"
+
 #define MIC A0
 #define NUM_SAMPLES 64
 #define SAMPLING_FREQUENCY 1024
 #define INTERVAL 5
 #define SOUND_THRESHOLD 50
 
-using namespace Eloquent;
-using namespace ML;
-using namespace Port;
-RandomForest oak;
+// uncomment when doing classification
+// using namespace Eloquent;
+// using namespace ML;
+// using namespace Port;
+// RandomForest oak;
 
 unsigned int samplingPeriod;
 unsigned long microSeconds;
@@ -41,9 +44,8 @@ void loop() {
     printFeatures();
 
 // uncomment when doing classification
-   Serial.print("You said ");
-//    // Serial.println(classIdxToName(predict(features)));
-   Serial.println(oak.idxToLabel(oak.predict(features)));
+//    Serial.print("You said ");
+//    Serial.println(oak.idxToLabel(oak.predict(features)));
 
 
     delay(1000);

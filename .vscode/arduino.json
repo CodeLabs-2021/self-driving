@@ -2,5 +2,5 @@
     "board": "arduino:avr:uno",
     "programmer": "arduino:avrispmkii",
     "port": "/dev/cu.usbmodem14101",
-    "sketch": "sound_detect/sound_detect.ino"
+    "sketch": "sensors/check_sensors/check_sensors.ino"
 }

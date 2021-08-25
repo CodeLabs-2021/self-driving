@@ -12,7 +12,7 @@ const int sensorPin0 = 3;
 const int sensorPin1 = 4;
 const int sensorPin2 = 5;
 
-const int check_dist = 20;
+const int check_dist = 11;
 
 // int distance0;
 // int distance1;
