@@ -2,7 +2,6 @@
 
 // uncomment when doing classification
 // #include "model.h"
-
 #define MIC A0
 #define NUM_SAMPLES 64
 #define SAMPLING_FREQUENCY 1024

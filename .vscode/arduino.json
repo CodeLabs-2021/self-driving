@@ -2,5 +2,9 @@
     "board": "arduino:avr:uno",
     "programmer": "arduino:avrispmkii",
     "port": "/dev/cu.usbmodem14101",
+<<<<<<< HEAD
     "sketch": "sensors/check_sensors/check_sensors.ino"
+=======
+    "sketch": "word_to_print/print_mic/print_mic.ino"
+>>>>>>> 3f2ddfb1c6cbed1a4df3212dda4fb5391b133575
 }
