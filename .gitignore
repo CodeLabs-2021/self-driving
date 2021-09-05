@@ -1,2 +1,3 @@
 wifi/SimpleWebServer/arduino_secrets.h
 wifi/ConnectWithWPA/arduino_secrets.h
+.vscode/arduino.json
