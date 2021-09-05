@@ -4,7 +4,7 @@ Program for an Arduino Uno-based differential-drive robot which uses IR sensors,
 
 ## Installation
 
-There are three different versions in this repository, each under a different branch. To download the code, switch branches under https://img.shields.io/badge/-main-lightgrey.svg
+There are three different versions in this repository, each under a different branch. To download one of the versions the code, switch branches under <img src="https://img.shields.io/badge/-main-lightgrey.svg"/> then Download ZIP under <img src="https://img.shields.io/badge/-Code-brightgreen.svg"/>.
 
 
 ```bash

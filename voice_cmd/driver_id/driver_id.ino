@@ -1,12 +1,7 @@
 #include <arduinoFFT.h>
 
 // uncomment when doing classification
-    /* don't forget to make two changes:
-        • int predict(double *x)    
-        • const char* predictLabel(double *x)
-    */
 #include "model.h"
-
 #define MIC A0
 #define NUM_SAMPLES 64
 #define SAMPLING_FREQUENCY 1024
