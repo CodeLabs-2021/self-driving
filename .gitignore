@@ -1,3 +1,6 @@
 wifi/SimpleWebServer/arduino_secrets.h
 wifi/ConnectWithWPA/arduino_secrets.h
+wifi/SimpleWebServerWiFi/arduino_secrets.h
+wifi/webServer_wallHug/arduino_secrets.h
 .vscode/arduino.json
+.vscode/c_cpp_properties.json

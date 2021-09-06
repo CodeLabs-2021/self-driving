@@ -1,4 +1,16 @@
 /*
+Requires header file arduino_secrets.h that includes
+the following two lines with relevant data inserted:
+
+#define SECRET_SSID ""
+#define SECRET_PASS ""
+
+*/
+
+
+
+
+/*
 
  This example connects to an unencrypted WiFi network.
  Then it prints the  MAC address of the WiFi shield,

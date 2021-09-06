@@ -1,4 +1,12 @@
 /*
+Non-functioning:
+File either too big for Arduino Uno or not compatible
+with the WiFi101 Firmware Updater.
+*/
+
+
+
+/*
   FirmwareUpdate.h - Firmware Updater for WiFi101 / WINC1500.
   Copyright (c) 2015 Arduino LLC.  All right reserved.
 

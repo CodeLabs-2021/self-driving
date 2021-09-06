@@ -1,3 +1,7 @@
+/*
+Basic functionality for a dip switch. Turns on an LED.
+*/
+
 int switch_pin = 2;
 int led_pin = 7;
 

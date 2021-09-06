@@ -1,10 +1,34 @@
-#include <arduinoFFT.h>
+/*
+Machine learning-based interpretation of voice
+commands. Based off of work by Eloquent Arduino.
+*/
 
-// uncomment when doing classification
-    /* don't forget to make two changes:
+/*
+Data Collection:
+Comment out all blocks labeled as such. Speak word
+into microphone over 15 times. Copy Serial Monitor
+output into a CSV file.
+
+Voice Commands:
+After machine learning algorithm in word_classify.py
+takes audio FFT output copied from Serial Monitor, 
+pasted into CSV file, and used to create ML model 
+in a header file.
+
+Uncomment all blocks labeled as such, and upload
+this file along with header AFTER:
+
+    Don't forget to make two changes to header:
         • int predict(double *x)    
         • const char* predictLabel(double *x)
-    */
+*/
+
+
+
+
+#include <arduinoFFT.h>
+
+// uncomment block when doing classification
 #include "model.h"
 
 #define MIC A0
@@ -13,7 +37,7 @@
 #define INTERVAL 5
 #define SOUND_THRESHOLD 50
 
-// uncomment when doing classification
+// uncomment block when doing classification
 using namespace Eloquent;
 using namespace ML;
 using namespace Port;
@@ -47,7 +71,7 @@ void loop() {
     captureWord();
     printFeatures();
 
-// uncomment when doing classification
+// uncomment blocks when doing classification
    Serial.print("You said ");
    Serial.println(oak.idxToLabel(oak.predict(features)));
 
