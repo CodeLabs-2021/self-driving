@@ -32,6 +32,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
+## Maintanence
+Each branch is maintained separately by the contributor that created it.
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
