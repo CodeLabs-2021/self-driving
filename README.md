@@ -2,6 +2,8 @@
 
 Program for an Arduino Uno-based differential-drive robot which uses IR sensors, a microphone and Wi-Fi to navigate around objects and respond to commands.
 
+![](https://github.com/CodeLabs-2021/self-driving/blob/george/Robot_GitHub_Gif.gif)
+
 ---
 
 ## Installation
