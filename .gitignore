@@ -1,0 +1,6 @@
+voice_cmd/classify_word.ipynb
+voice_cmd/classify_word.py
+wifi/SimpleWebServerWiFi/arduino_secrets.h
+wifi/webServer_wallHug/arduino_secrets.h
+.vscode/arduino.json
+.vscode/c_cpp_properties.json
